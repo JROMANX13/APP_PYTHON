@@ -5,5 +5,5 @@ pip install -r requirements.txt
 EJECUTAR EL VSCODE CON EL ENTORNO VIRTUAL:
 
 venv\Scripts\activate
-python "d:/Bibliotecas/Documentos/TECH/python/PYTHON/Tkinter Login Page/login2.py"
+python archivo.py
 
