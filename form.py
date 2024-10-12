@@ -3,7 +3,7 @@ import re
 import tkinter.messagebox as messagebox
 import os
 import subprocess
-import menu  # Asegúrate de que este módulo esté accesible
+import menu  
 
 class RegistrationForm:
     def __init__(self, window):
@@ -71,8 +71,8 @@ class RegistrationForm:
             messagebox.showerror("Error", "Por favor, ingrese una dirección de correo válida.")
             return
 
-        if not phone.isdigit() or len(phone) < 10:
-            messagebox.showerror("Error", "Por favor, ingrese un número de teléfono válido.")
+        if not phone.isdigit() or len(phone) != 10:
+            messagebox.showerror("Error", "Por favor, ingrese un número de teléfono válido (exactamente 10 dígitos).")
             return
 
         messagebox.showinfo("Éxito", "¡Registro exitoso!")
